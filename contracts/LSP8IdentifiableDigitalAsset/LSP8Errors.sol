@@ -103,3 +103,9 @@ error LSP8TokenIdsDataEmptyArray();
  * @notice Batch call failed.
  */
 error LSP8BatchCallFailed(uint256 callIndex);
+
+/**
+ * @dev Reverts when trying to mint an Token with a `tokenId` - Address and its not properly refrenced back to the
+ * actual LP8 collection contract address.
+ */
+error InvalidReferenceAddress(address referenceAddress);
